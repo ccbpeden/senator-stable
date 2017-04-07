@@ -1,5 +1,15 @@
 <h2> Currently Obligated Legislators:</h2>
-<div class="well" *ngFor="let currentLegislator of legislators" (click)="goToLegislator(currentLegislator.$key)">
+
+<div class="well">
+  <h3>Filter By Party</h3>
+  <select class="btn" (change)="onChange($event.target.value)">
+    <option value="All" selected="selected">All Parties</option>
+    <option value="Populare">Populare</option>
+    <option value="Optimate">Optimate</option>
+  </select>
+</div>
+
+<div class="well" *ngFor="let currentLegislator of legislators | party:selectedParty" (click)="goToLegislator(currentLegislator.$key)">
   <h3>{{currentLegislator.name}}</h3>
   <h5>Position: {{currentLegislator.position}}</h5>
   <h5>Party: {{currentLegislator.party}}</h5>

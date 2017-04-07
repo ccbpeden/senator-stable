@@ -16,7 +16,7 @@ import { Legislator } from '../legislator.model';
 
 export class HomeComponent implements OnInit {
   legislators;
-
+  selectedParty = "All";
 
   constructor(private router: Router, private legislatorService: LegislatorService) { }
 
@@ -31,6 +31,7 @@ export class HomeComponent implements OnInit {
     this.router.navigate(['legis-detail', key]);
   }
 
-
-
+  onChange(optionFromMenu) {
+    this.selectedParty = optionFromMenu;
+  }
 }
