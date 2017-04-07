@@ -20,7 +20,14 @@
 </div>
 
 <div class="well" *ngFor="let currentLegislator of legislators | party:selectedParty | position:selectedPosition" (click)="goToLegislator(currentLegislator.$key)">
-  <h3>{{currentLegislator.name}}</h3>
-  <h5>Position: {{currentLegislator.position}}</h5>
-  <h5>Party: {{currentLegislator.party}}</h5>
+  <div class="row">
+    <div class="col-md-3">
+      <img src={{currentLegislator.imgurl}} alt={{currentLegislator.name}}/>
+    </div>
+    <div class="col-md-9">
+      <h3>{{currentLegislator.name}}</h3>
+      <h5>Position: {{currentLegislator.position}}</h5>
+      <h5>Party: {{currentLegislator.party}}</h5>
+    </div>
+  </div>
 </div>

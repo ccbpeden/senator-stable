@@ -6,7 +6,8 @@
     "party": "Optimate",
     "constituency": ["Aristocrat", "Traditionalist", "Tax Farmer"],
     "weakness": ["boys", "wine", "money"],
-    "debt": 250000
+    "debt": 250000,
+    "imgurl": "http://www.sullla.com/sullastatue.jpg"
   },
   {
     "name": "Publius Quintus Varro",
@@ -14,7 +15,8 @@
     "party": "Optimate",
     "constituency": ["Military Procurement", "Tax Farmer", "Development"],
     "weakness": ["statuary", "speculation"],
-    "debt": 1000000
+    "debt": 1000000,
+    "imgurl": "http://www.turecko-web.cz/sites/turecko-web.cz/files/styles/zmenit_velikost_hlavni/public/turecko-vykopavky.jpg?itok=uVV_O2eQ"
   },
   {
     "name": "Lucius Sergius Catilina",
@@ -22,6 +24,16 @@
     "party": "Populares",
     "constituency": ["Debtors", "Disenfranchised", "Collegia"],
     "weakness": ["debt", "debauchery"],
-    "debt": 6000000
+    "debt": 6000000,
+    "imgurl": "https://userscontent2.emaze.com/images/a1fc24e1-e6e3-4ee0-9bea-ea6d829bd597/c9aa733e-f9b8-4555-a052-3eb860ee5bd6.png"
+  },
+  {
+    "name": "Marcus Porcius Cato",
+    "position": "Censor",
+    "party": "Optimate",
+    "constituency": ["Aristocrat", "Traditionalist", "Military Procurement"],
+    "weakness": ["pride", "tradition"],
+    "debt": 2000000,
+    "imgurl":"http://ancientrome.ru/art/artwork/sculp/rom/republic/statesman/cato-minor/cat002.jpg"
   }
 ]}

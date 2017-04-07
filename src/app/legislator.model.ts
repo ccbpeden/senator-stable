@@ -4,5 +4,6 @@ export class Legislator {
                 public party: string,
                 public constituency: string[],
                 public weakness: string[],
-                public debt: number,) { }
+                public debt: number,
+                public imgurl: string) { }
 }
