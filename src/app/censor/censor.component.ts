@@ -17,6 +17,7 @@ export class CensorComponent implements OnInit {
   legislators;
   selectedLegislatorKey = null;
   newSenatorFormClicked = false;
+  hideNewButton = true;
 
   constructor(private router: Router, private legislatorService: LegislatorService) { }
 
@@ -32,12 +33,18 @@ export class CensorComponent implements OnInit {
 
   OpenAddSenatorForm(){
     this.newSenatorFormClicked = true;
+    this.hideNewButton = false;
   }
 
   destroyLegislator(key){
     if(confirm("Are you sure you wish to erase the honorable gentleman from your records?  This action cannot be undone.")){
       this.legislatorService.deleteLegislator(key);
     }
+  }
+
+  addLegislator(legislator){
+    this.legislatorService.newLegislator(legislator);
+    this.newSenatorFormClicked = false;
   }
 
 }

@@ -13,6 +13,7 @@ import { AboutComponent } from './about/about.component';
 import { PartyPipe } from './party.pipe';
 import { PositionPipe } from './position.pipe';
 import { CensorComponent } from './censor/censor.component';
+import { NewLegisComponent } from './new-legis/new-legis.component';
 
 export const firebaseConfig = {
   apiKey: masterFirebaseConfig.apiKey,
@@ -29,7 +30,8 @@ export const firebaseConfig = {
     AboutComponent,
     PartyPipe,
     PositionPipe,
-    CensorComponent
+    CensorComponent,
+    NewLegisComponent
   ],
   imports: [
     BrowserModule,

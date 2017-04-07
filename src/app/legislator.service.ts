@@ -14,8 +14,8 @@ export class LegislatorService {
     return this.legislators;
   }
 
-  addLegislator(newLegislator: Legislator){
-    this.legislators.push(newLegislator);
+  newLegislator(legislator: Legislator){
+    this.legislators.push(legislator);
   }
 
   getLegislatorByKey(key: string){

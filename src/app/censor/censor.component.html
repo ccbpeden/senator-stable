@@ -1,7 +1,7 @@
 <h2>Censorate:</h2>
-<button (click)="OpenAddSenatorForm()">Add a new legislator:</button>
+<button *ngIf="hideNewButton" class="btn btn-success" (click)="OpenAddSenatorForm()">Add a new legislator:</button>
 <div *ngIf="newSenatorFormClicked">
-
+  <app-new-legis (addClick)='addLegislator($event)'></app-new-legis>
 </div>
 
 <h5>Select a senator whose details you would like to edit:</h5>

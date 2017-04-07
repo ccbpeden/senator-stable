@@ -67,6 +67,7 @@ Components: app-root:
   3) contact,
   4) legis-detail
   5) admin,
+    * new-legis
     * legis-edit
     * legis-list (reuse)
 

@@ -1,0 +1,13 @@
+<h3>Add a new Senator:</h3>
+<div class="row">
+  <div class="col-md-6">
+    <label>Name:</label>    <input class="form-control" #newName>
+    <label>Position:</label>    <input class="form-control" #newPosition>
+    <label>Party:</label>    <input class="form-control" #newParty>
+    <label>Constituencies:</label>     <input class="form-control" #newConstituency1><br><input class="form-control" #newConstituency2><br><input class="form-control" #newConstituency3>
+    <label>Weaknesses:</label>    <input class="form-control" #newWeakness1><br><input class="form-control" #newWeakness2><br><input class="form-control" #newWeakness3>
+    <label>Debt:</label><input class="form-control" #newDebt>
+    <label>Image URL:</label><input class="form-control" #newImgurl>
+  </div>
+</div>
+  <button class="btn btn-success"(click)="addLegislator(newName.value, newPosition.value, newParty.value, newConstituency1.value, newConstituency2.value, newConstituency3.value, newWeakness1.value, newWeakness2.value, newWeakness3.value, newDebt.value, newImgurl.value)">Add Legislator</button>
