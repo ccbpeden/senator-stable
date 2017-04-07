@@ -1,21 +1,27 @@
 {
   "legislators":[
-  { "name": "Lucius Cornelius Sulla",
-  "position": "Dictator",
-  "party": "Optimate",
-  "constituency": ["Aristocrat", "Traditionalist", "Tax Farmer"],
-  "weakness": ["boys", "wine", "money"],
-  "debt": 250000},
-  { "name": "Publius Quintus Varro",
-  "position": "Senator",
-  "party": "Optimate",
-  "constituency": ["Military Procurement", "Tax Farmer", "Development"],
-  "weakness": ["statuary", ],
-  "debt": 0,},
-  { "name": "string",
-  "position": "string",
-  "party": "string",
-  "constituency": ["string"],
-  "weakness": ["string"],
-  "debt": 0,},
+  {
+    "name": "Lucius Cornelius Sulla",
+    "position": "Consul",
+    "party": "Optimate",
+    "constituency": ["Aristocrat", "Traditionalist", "Tax Farmer"],
+    "weakness": ["boys", "wine", "money"],
+    "debt": 250000
+  },
+  {
+    "name": "Publius Quintus Varro",
+    "position": "Senator",
+    "party": "Optimate",
+    "constituency": ["Military Procurement", "Tax Farmer", "Development"],
+    "weakness": ["statuary", "speculation"],
+    "debt": 1000000
+  },
+  {
+    "name": "Lucius Sergius Catilina",
+    "position": "Senator",
+    "party": "Populares",
+    "constituency": ["Debtors", "Disenfranchised", "Collegia"],
+    "weakness": ["debt", "debauchery"],
+    "debt": 6000000
+  }
 ]}

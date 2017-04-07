@@ -23,12 +23,12 @@ export class HomeComponent implements OnInit {
   ngOnInit() {
     this.legislatorService.getLegislators().subscribe(dataLastEmittedFromObserver => {
       this.legislators = dataLastEmittedFromObserver;
-      console.log(this.legislators);
     });
   }
 
   goToLegislator(key){
-    this.router.navigate(['legis-detail'], key);
+    console.log(key);
+    this.router.navigate(['legis-detail', key]);
   }
 
 

@@ -1,0 +1,18 @@
+<h2>Legislator Detail:{{legislatorToDisplay?.name}}</h2>
+<div class="well">
+  <h5>Position: {{legislatorToDisplay?.position}}</h5>
+  <h5>Party: {{legislatorToDisplay?.party}}</h5>
+  <h5>Constituencies:</h5>
+  <ul>
+    <div *ngFor="let constituent of legislatorToDisplay?.constituency">
+      <li>{{constituent}}</li>
+    </div>
+  </ul>
+  <h5>Weaknesses:</h5>
+  <ul>
+    <div *ngFor="let weak of legislatorToDisplay?.weakness">
+      <li>{{weak}}</li>
+    </div>
+  </ul>
+  <h5>Debt: {{legislatorToDisplay?.debt | currency:'ITL':true}}</h5>
+</div>
