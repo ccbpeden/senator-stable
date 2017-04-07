@@ -9,6 +9,7 @@ import { AngularFireModule } from 'angularfire2';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { LegisDetailComponent } from './legis-detail/legis-detail.component';
+import { AboutComponent } from './about/about.component';
 
 export const firebaseConfig = {
   apiKey: masterFirebaseConfig.apiKey,
@@ -21,7 +22,8 @@ export const firebaseConfig = {
   declarations: [
     AppComponent,
     HomeComponent,
-    LegisDetailComponent
+    LegisDetailComponent,
+    AboutComponent
   ],
   imports: [
     BrowserModule,
