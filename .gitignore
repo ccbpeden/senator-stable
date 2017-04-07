@@ -33,7 +33,9 @@
 npm-debug.log
 testem.log
 /typings
-/api-keys.ts
+
+#Firebase credentials
+/src/app/api-keys.ts
 
 # e2e
 /e2e/*.js
