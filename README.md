@@ -29,7 +29,7 @@ If you wish to run the app locally, please follow the following instructions
 
 * Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-If you wish to use the app on the web, please navigate to the following website:  
+If you wish to use the app on the web, please navigate to the following website: https://senator-stable.firebaseapp.com
 
 ## Technologies Used
 * Git, CSS, JS, Angular, Nodejs, Bower
