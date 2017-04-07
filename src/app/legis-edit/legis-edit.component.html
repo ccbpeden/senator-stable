@@ -1,19 +1,21 @@
 <h3>Edit This Senator: {{legislatorToDisplay?.name}}</h3>
 <div class="row">
   <div class="col-md-6">
-    <label>Name:</label>    <input class="form-control" [(ngModel)]={{legislatorToDisplay?.name}}>
-    <label>Position:</label>    <input class="form-control" [(ngModel)]={{legislatorToDisplay?.position}}>
-    <label>Party:</label>    <input class="form-control" [(ngModel)]={{legislatorToDisplay?.party}}>
+    <label>Name:</label>    <input #newName class="form-control" value={{legislatorToDisplay?.name}}>
+    <label>Position:</label>    <input #newPosition class="form-control" value={{legislatorToDisplay?.position}}>
+    <label>Party:</label>    <input #newParty class="form-control" value={{legislatorToDisplay?.party}}>
     <label>Constituencies:</label>
-    <div  *ngFor="let currentConstituency of legislatorToDisplay?.constituency">
-      <input class="form-control" [(ngModel)]={{currentConstituency}}>
-    </div>
+      <input #newConstituency1 class="form-control" value={{legislatorToDisplay?.constituency[0]}}>
+      <input #newConstituency2 class="form-control" value={{legislatorToDisplay?.constituency[1]}}>
+      <input #newConstituency3 class="form-control" value={{legislatorToDisplay?.constituency[2]}}>
     <label>Weaknesses:</label>
-    <div  *ngFor="let currentWeakness of legislatorToDisplay?.weakness">
-      <input class="form-control" [(ngModel)]={{currentWeakness}}>
-    </div>
-    <label>Debt:</label><input class="form-control" [(ngModel)]={{legislatorToDisplay?.debt}}>
-    <label>Image URL:</label><input class="form-control" [(ngModel)]={{legislatorToDisplay?.imgurl}}>
+      <input #newWeakness1 class="form-control" value={{legislatorToDisplay?.weakness[0]}}>
+      <input #newWeakness2 class="form-control" value={{legislatorToDisplay?.weakness[1]}}>
+      <input #newWeakness3 class="form-control" value={{legislatorToDisplay?.weakness[2]}}>
+    <label>Debt:</label><input #newDebt class="form-control" value={{legislatorToDisplay?.debt}}>
+    <label>Image URL:</label><input #newImgurl class="form-control" value={{legislatorToDisplay?.imgurl}}>
   </div>
 </div>
-  <button class="btn btn-success"(click)="updateLegislator(legislatorToDisplay)">Add Legislator</button>
+  <button class="btn btn-success"(click)="
+  updateLegislator(newName.value,  newPosition.value,  newParty.value,  newConstituency1.value,  newConstituency2.value,  newConstituency3.value,  newWeakness1.value,  newWeakness2.value,  newWeakness3.value,  newDebt.value,
+  newImgurl.value);">Update Legislator</button>
