@@ -27,4 +27,10 @@ export class HomeComponent implements OnInit {
     });
   }
 
+  goToLegislator(key){
+    this.router.navigate(['legis-detail'], key);
+  }
+
+
+
 }

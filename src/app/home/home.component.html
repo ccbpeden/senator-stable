@@ -1,3 +1,6 @@
-<p>
-  home works!
-</p>
+<h2> Currently Obligated Legislators:</h2>
+<div class="well" *ngFor="let currentLegislator of legislators" (click)="goToLegislator(currentLegislator.$key)">
+  <h3>{{currentLegislator.name}}</h3>
+  <h5>Position: {{currentLegislator.position}}</h5>
+  <h5>Party: {{currentLegislator.party}}</h5>
+</div>
