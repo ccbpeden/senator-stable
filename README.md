@@ -53,7 +53,7 @@ If you wish to use the app on the web, please navigate to the following website:
 * As a user, I'd like to click a legislator's entry in the list to visit their profile page, which should include more details about them, such as their primary constituencies, positions, political strengths, weaknesses, and level of indebtedness.
 * As a user, I'd like the option to visit an "About" page that explains what the Senator Stable is.
 * As a user, I'd like all data persisted in a database, so it's always there when I need it, and can be subpoenaed in a congressional hearing.
-* As a user, I'd like to filter the list of users by their particular party,
+* As a user, I'd like to filter the list of users by their particular party and rank,
 * As an administrator, I want to add new users to the stable. (User authentication is not required).
 * As an administrator, I want to edit user profiles, in case I make a mistake, or need to update their details (perhaps a recent incriminating photo has come to light).
 * As an administrator, need the option to delete a user, in case they leave the stable (are imprisoned or leave public life).

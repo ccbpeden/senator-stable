@@ -12,6 +12,7 @@ import { LegisDetailComponent } from './legis-detail/legis-detail.component';
 import { AboutComponent } from './about/about.component';
 import { PartyPipe } from './party.pipe';
 import { PositionPipe } from './position.pipe';
+import { CensorComponent } from './censor/censor.component';
 
 export const firebaseConfig = {
   apiKey: masterFirebaseConfig.apiKey,
@@ -27,7 +28,8 @@ export const firebaseConfig = {
     LegisDetailComponent,
     AboutComponent,
     PartyPipe,
-    PositionPipe
+    PositionPipe,
+    CensorComponent
   ],
   imports: [
     BrowserModule,

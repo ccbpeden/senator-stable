@@ -1,0 +1,16 @@
+<h2>Censorate:</h2>
+<button (click)="OpenAddSenatorForm()">Add a new legislator:</button>
+<div *ngIf="newSenatorFormClicked">
+
+</div>
+
+<h5>Select a senator whose details you would like to edit:</h5>
+<div class="well" *ngFor="let currentLegislator of legislators">
+  <div class="row">
+    <div class="col-md-4">
+      <h3>{{currentLegislator.name}}</h3>
+    </div>
+      <button class="btn btn-warning" (click)="selectLegislator(currentLegislator.$key)">Select</button>
+      <button class="btn btn-danger" (click)="destroyLegislator(currentLegislator.$key)">Delete</button>
+  </div>
+</div>

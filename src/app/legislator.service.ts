@@ -27,8 +27,8 @@ export class LegislatorService {
     legislatorEntryInFirebase.update({name: newName, position: newPosition, party: newParty, constituency: newConstituency, weakness: newWeakness, debt: newDebt});
   }
 
-  deleteLegislator(legislator) {
-    let legislatorEntryInFirebase = this.getLegislatorByKey(legislator.$key);
+  deleteLegislator(key) {
+    let legislatorEntryInFirebase = this.getLegislatorByKey(key);
     legislatorEntryInFirebase.remove();
   }
 
