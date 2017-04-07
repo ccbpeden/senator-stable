@@ -1,1 +1,19 @@
 /* You can add global styles to this file, and also import other style files */
+body{
+  padding-top: 3em;
+  font-family: 'Cinzel', serif !important;
+  background-image: url(https://s-media-cache-ak0.pinimg.com/originals/a7/41/81/a74181a8847f83440d544b0768c68c86.jpg);
+}
+
+img{
+  height: 10em;
+}
+
+
+.navbar:hover{
+  background-image: url(http://uniformdesign.us/blog/wp-content/uploads/2011/03/Coverings-Etc_Bio-Glass_Oriental-Jade_slab.jpg);
+}
+
+.jade:hover{
+  background-image: url(http://uniformdesign.us/blog/wp-content/uploads/2011/03/Coverings-Etc_Bio-Glass_Oriental-Jade_slab.jpg);
+}

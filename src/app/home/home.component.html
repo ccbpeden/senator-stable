@@ -3,7 +3,7 @@
 <div class="row">
   <div class="col-md-6">
     <h3>Filter By Party</h3>
-    <select class="btn" (change)="onChangeParty($event.target.value)">
+    <select class="btn jade" (change)="onChangeParty($event.target.value)">
       <option value="All" selected="selected">All Parties</option>
       <option value="Populare">Populare</option>
       <option value="Optimate">Optimate</option>
@@ -11,7 +11,7 @@
   </div>
   <div class="col-md-6">
     <h3>Filter By Position</h3>
-    <select class="btn" (change)="onChangePosition($event.target.value)">
+    <select class="btn jade" (change)="onChangePosition($event.target.value)">
       <option value="Senator" selected="selected">All Senators</option>
       <option value="Consul">Consul</option>
       <option value="Censor">Censor</option>
@@ -19,7 +19,7 @@
   </div>
 </div>
 
-<div class="well" *ngFor="let currentLegislator of legislators | party:selectedParty | position:selectedPosition" (click)="goToLegislator(currentLegislator.$key)">
+<div class="well jade" *ngFor="let currentLegislator of legislators | party:selectedParty | position:selectedPosition" (click)="goToLegislator(currentLegislator.$key)">
   <div class="row">
     <div class="col-md-3">
       <img src={{currentLegislator.imgurl}} alt={{currentLegislator.name}}/>
