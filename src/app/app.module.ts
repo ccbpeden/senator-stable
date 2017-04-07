@@ -11,6 +11,7 @@ import { HomeComponent } from './home/home.component';
 import { LegisDetailComponent } from './legis-detail/legis-detail.component';
 import { AboutComponent } from './about/about.component';
 import { PartyPipe } from './party.pipe';
+import { PositionPipe } from './position.pipe';
 
 export const firebaseConfig = {
   apiKey: masterFirebaseConfig.apiKey,
@@ -25,7 +26,8 @@ export const firebaseConfig = {
     HomeComponent,
     LegisDetailComponent,
     AboutComponent,
-    PartyPipe
+    PartyPipe,
+    PositionPipe
   ],
   imports: [
     BrowserModule,

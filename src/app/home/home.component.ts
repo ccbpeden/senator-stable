@@ -17,6 +17,7 @@ import { Legislator } from '../legislator.model';
 export class HomeComponent implements OnInit {
   legislators;
   selectedParty = "All";
+  selectedPosition = "Senator";
 
   constructor(private router: Router, private legislatorService: LegislatorService) { }
 
@@ -31,7 +32,11 @@ export class HomeComponent implements OnInit {
     this.router.navigate(['legis-detail', key]);
   }
 
-  onChange(optionFromMenu) {
+  onChangeParty(optionFromMenu) {
     this.selectedParty = optionFromMenu;
+  }
+
+  onChangePosition(optionFromMenu) {
+    this.selectedPosition = optionFromMenu;
   }
 }
