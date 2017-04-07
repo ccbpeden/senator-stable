@@ -22,9 +22,9 @@ export class LegislatorService {
     return this.angularFire.database.object('legislators/' + key);
   }
 
-  updateLegislator(legislator, newName, newPosition, newParty, newConstituency, newWeakness, newDebt){
-    var legislatorEntryInFirebase = this.getLegislatorByKey(legislator.$key);
-    legislatorEntryInFirebase.update({name: newName, position: newPosition, party: newParty, constituency: newConstituency, weakness: newWeakness, debt: newDebt});
+  updateLegislator(localLegislator){
+    var legislatorEntryInFirebase = this.getLegislatorByKey(localLegislator.$key);
+    legislatorEntryInFirebase.update({name: localLegislator.newName, position: localLegislator.newPosition, party: localLegislator.newParty, constituency: localLegislator.newConstituency, weakness: localLegislator.newWeakness, debt: localLegislator.newDebt});
   }
 
   deleteLegislator(key) {

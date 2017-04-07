@@ -15,9 +15,10 @@ import { Legislator } from '../legislator.model';
 })
 export class CensorComponent implements OnInit {
   legislators;
-  selectedLegislatorKey = null;
+  selectedLegislator = null;
   newSenatorFormClicked = false;
   hideNewButton = true;
+  showEditForm = false;
 
   constructor(private router: Router, private legislatorService: LegislatorService) { }
 
@@ -27,8 +28,9 @@ export class CensorComponent implements OnInit {
     });
   }
 
-  selectLegislator(key){
-    this.selectedLegislatorKey = key;
+  selectLegislator(legislator){
+    this.router.navigate(['legis-edit', legislator.$key]);
+    console.log(legislator);
   }
 
   OpenAddSenatorForm(){

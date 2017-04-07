@@ -1,0 +1,19 @@
+<h3>Edit This Senator: {{legislatorToDisplay?.name}}</h3>
+<div class="row">
+  <div class="col-md-6">
+    <label>Name:</label>    <input class="form-control" [(ngModel)]={{legislatorToDisplay?.name}}>
+    <label>Position:</label>    <input class="form-control" [(ngModel)]={{legislatorToDisplay?.position}}>
+    <label>Party:</label>    <input class="form-control" [(ngModel)]={{legislatorToDisplay?.party}}>
+    <label>Constituencies:</label>
+    <div  *ngFor="let currentConstituency of legislatorToDisplay?.constituency">
+      <input class="form-control" [(ngModel)]={{currentConstituency}}>
+    </div>
+    <label>Weaknesses:</label>
+    <div  *ngFor="let currentWeakness of legislatorToDisplay?.weakness">
+      <input class="form-control" [(ngModel)]={{currentWeakness}}>
+    </div>
+    <label>Debt:</label><input class="form-control" [(ngModel)]={{legislatorToDisplay?.debt}}>
+    <label>Image URL:</label><input class="form-control" [(ngModel)]={{legislatorToDisplay?.imgurl}}>
+  </div>
+</div>
+  <button class="btn btn-success"(click)="updateLegislator(legislatorToDisplay)">Add Legislator</button>

@@ -14,6 +14,7 @@ import { PartyPipe } from './party.pipe';
 import { PositionPipe } from './position.pipe';
 import { CensorComponent } from './censor/censor.component';
 import { NewLegisComponent } from './new-legis/new-legis.component';
+import { LegisEditComponent } from './legis-edit/legis-edit.component';
 
 export const firebaseConfig = {
   apiKey: masterFirebaseConfig.apiKey,
@@ -31,7 +32,8 @@ export const firebaseConfig = {
     PartyPipe,
     PositionPipe,
     CensorComponent,
-    NewLegisComponent
+    NewLegisComponent,
+    LegisEditComponent
   ],
   imports: [
     BrowserModule,

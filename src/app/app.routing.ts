@@ -5,6 +5,7 @@ import { HomeComponent } from './home/home.component';
 import { LegisDetailComponent } from './legis-detail/legis-detail.component';
 import { AboutComponent } from './about/about.component';
 import { CensorComponent } from './censor/censor.component';
+import { LegisEditComponent } from './legis-edit/legis-edit.component';
 
 
 const appRoutes: Routes = [
@@ -23,6 +24,10 @@ const appRoutes: Routes = [
   {
     path: 'censor',
     component: CensorComponent
+  },
+  {
+    path: 'legis-edit/:key',
+    component: LegisEditComponent
   }
 ];
 
