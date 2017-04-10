@@ -5,6 +5,7 @@ import { Location } from '@angular/common';
 import { AngularFire, FirebaseListObservable } from 'angularfire2';
 import { LegislatorService } from '../legislator.service';
 import { Legislator } from '../legislator.model';
+import { AuthService } from '../providers/auth.service';
 
 @Component({
   selector: 'app-legis-edit',

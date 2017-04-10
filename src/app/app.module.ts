@@ -15,6 +15,9 @@ import { PositionPipe } from './position.pipe';
 import { CensorComponent } from './censor/censor.component';
 import { NewLegisComponent } from './new-legis/new-legis.component';
 import { LegisEditComponent } from './legis-edit/legis-edit.component';
+import { AuthService } from './providers/auth.service';
+import { LoginPageComponent } from './login-page/login-page.component';
+
 
 export const firebaseConfig = {
   apiKey: masterFirebaseConfig.apiKey,
@@ -33,7 +36,8 @@ export const firebaseConfig = {
     PositionPipe,
     CensorComponent,
     NewLegisComponent,
-    LegisEditComponent
+    LegisEditComponent,
+    LoginPageComponent
   ],
   imports: [
     BrowserModule,
@@ -42,7 +46,7 @@ export const firebaseConfig = {
     routing,
     AngularFireModule.initializeApp(firebaseConfig)
   ],
-  providers: [],
+  providers: [AuthService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

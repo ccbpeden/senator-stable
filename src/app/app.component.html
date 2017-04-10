@@ -4,6 +4,13 @@
       <a class="navbar-brand" routerLink="">Home</a>
     </div>
     <ul class="nav navbar-nav navbar-right">
+    <div *ngIf="isLoggedIn">
+      <li class="navbar-text navbar-right">Logged In: {{user_displayName}} ({{user_email}})</li>
+        <li><button class="btn btn-default" (click)="logout()">Logout</button></li>
+    </div>
+    <div *ngIf="!isLoggedIn">
+      <p class="navbar-text navbar-right">Logged Out</p>
+    </div>
       <li><a routerLink="about">About</a></li>
       <li><a routerLink="censor">Admin</a></li>
     </ul>
@@ -13,4 +20,9 @@
   {{title}}
 </h1>
 <hr>
-<router-outlet></router-outlet>
+<!-- <div *ngIf="isLoggedIn" class=""> -->
+  <router-outlet></router-outlet>
+<!-- </div> -->
+<!-- <div *ngIf="!isLoggedIn" class=""> -->
+  <!-- <app-login-page></app-login-page> -->
+<!-- </div> -->
